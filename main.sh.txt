@@ -1,0 +1,26 @@
+echo "vous devez choisir une alternative" 
+echo " tapez -ltop pour lancer la commande top "
+echo " tapez -lps pour lancer la commande ps-aux "
+echo " tapez -root pour afficher les processus lances par l'utilisateur root "
+echo " tapez -h ou -help pour afficher le help "
+
+echo " donner votre choix " 
+read choix 
+
+case $choix in 
+   -ltop)
+     top
+     ;;
+   -lps)
+     ps -aux
+     ;;
+   -root)
+     ;;
+   --mcpu)
+     ;;
+    -h)
+     ;;
+   *)
+echo " choix incorrect " 
+;;
+esac
